@@ -1,0 +1,51 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{tikz}
+
+\title{Theoretische Informatik II}
+\author{Robin Jahn 3598632 st178507@stud.uni-
+stuttgart.de \\
+Anton Rofail 3601370 st177306@stud.uni-
+stuttgart.de \\
+Dennis Hehn 3593682 st178433@stud.uni-
+stuttgart.de}
+
+\begin{document}
+\maketitle
+
+\section{Baumgrundschule}
+%\includegraphics*[width=\textwidth]{Bildschirmfoto vom 2022-05-06 14-43-33.png}
+\subsection{(a)}
+
+
+
+\subsection{(b)}
+%Bei dem Baum handelt es sich nicht um eine  Suchbaum, da ein Suchbaum einen Schlüssel, Daten und eine Bewegung nach links oder rechts vorheißt. Das letzte ist leider nicht möglich, da schon von der Wurzel aus 3 Kanten in Kindknoten münden und dadurch eine anständige Traversierung nicht mehr möglich. Außerdem ist die Ordnung in dem Baum „B1“ auch ziemlich willkürlich, da zum Beispiel im Knoten „6“ werden diverse ungeordnete Werte verknüpft, also falls man eine Wert sucht aus dem Knoten "6" kann man links in einem großen Wert enden mittig wieder in einem kleiner und rechts wieder in einem großen Wert, weshalb man nicht oder
+
+
+\begin{tikzpicture}[every node/.style={circle, draw=black}]
+    \node {$8$}
+      child {node {$67$}
+        child {node {$47$}
+            child {node {$15$}}
+            child {node {$85$}}
+        }
+        child {node {$86$}
+            child{node{$1$}}
+            child{node {$90$}}
+        }}
+      child {
+        child {node{$12$}
+            child{node {$69$}
+                child{node {$20$}}
+                child{node {$17$}}
+            }
+            child{node {$62$}} 
+      }}
+
+    \end{tikzpicture}
+
+\end{document}
