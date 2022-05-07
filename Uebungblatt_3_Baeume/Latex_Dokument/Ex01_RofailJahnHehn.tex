@@ -23,9 +23,10 @@ stuttgart.de}
 
 
 \subsection{(b)}
-%Bei dem Baum handelt es sich nicht um eine  Suchbaum, da ein Suchbaum einen Schlüssel, Daten und eine Bewegung nach links oder rechts vorheißt. Das letzte ist leider nicht möglich, da schon von der Wurzel aus 3 Kanten in Kindknoten münden und dadurch eine anständige Traversierung nicht mehr möglich. Außerdem ist die Ordnung in dem Baum „B1“ auch ziemlich willkürlich, da zum Beispiel im Knoten „6“ werden diverse ungeordnete Werte verknüpft, also falls man eine Wert sucht aus dem Knoten "6" kann man links in einem großen Wert enden mittig wieder in einem kleiner und rechts wieder in einem großen Wert, weshalb man nicht oder
+Bei dem Baum handelt es sich nicht um eine  Suchbaum, da ein Suchbaum einen Schlüssel, Daten und eine Bewegung nach links oder rechts vorheißt. Außerdem hat ein Suchbaum auch eine Suchstruktur, welche z.B. bei einem numerischen Datentyp die Größen der Werte unterteilt. \\
+Dieser Baum weißt leider nicht die Eigenschaften auf, da einerseits von manchen Knoten drei Kanten abgehen, weshalb eine Suchen quasi unmöglich ist, da man nicht weißt, ob der mittlere Knoten größer oder kleiner ist. Außerdem ist mit 3 Kanten eine anständige Traversierung nicht mehr möglich. Demanschließend ist die Ordnung in dem Baum „B1“ auch ziemlich willkürlich, da zum Beispiel im Knoten „6“ werden diverse ungeordnete Werte verknüpft, also falls man eine Wert sucht aus dem Knoten "6" kann man links in einem großen Wert enden mittig wieder in einem kleiner und rechts wieder in einem großen Wert, sodass die Suche dadurch auch nicht mehr möglich ist.\\
 
-
+\subsection{}
 \begin{tikzpicture}[every node/.style={circle, draw=black}]
     \node {$8$}
       child {node {$67$}
